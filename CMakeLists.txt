@@ -1,5 +1,10 @@
-cmake_minimum_required(VERSION 2.8.1)
+cmake_minimum_required(VERSION 3.13.4)
 project(UnitTest++)
+
+
+SET(CMAKE_CXX_FLAGS_DEBUG "-O0 -g -fPIC")
+SET(CMAKE_C_FLAGS_DEBUG "-O0 -g -fPIC")
+
 
 option(UTPP_USE_PLUS_SIGN
     "Set this to OFF if you wish to use '-cpp' instead of '++' in lib/include paths"
